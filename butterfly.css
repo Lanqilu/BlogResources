@@ -5,17 +5,57 @@
     --dark_page_color: rgba(18, 18, 18, 0.8)
 }
 
-body {
+/*分割线样式*/
+hr{
+    position: unset;
+    margin: 1rem auto;
+}
+
+/*目录不换行,字体调整*/
+ol.toc {
+    white-space: nowrap;
+    font-size: 1em;
+}
+/*目录宽度*/
+#aside-content {
+    width: 35%;
+}
+
+/*目录上方百分比显示*/
+#aside-content #card-toc .toc-content:before {
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/*目录选中样式*/
+#aside-content #card-toc .toc-content .toc-link.active {
+    border-left-color: #00c4b6; 
+    background: #00c4b6;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/*代码边框*/
+#article-container figure.highlight, #article-container pre[class*=language-] {
+    border-radius: 1em;
+}
+
+/*Fowller me*/
+a#card-info-btn {
+    border-radius: 0.75em;
+}
+
+
+
+/* body {
     cursor: url(https://cdn.jsdelivr.net/npm/kang-static/Hexo/img/default.cur), default
 }
 
 a, button, img {
     cursor: url(https://cdn.jsdelivr.net/npm/kang-static/Hexo/img/pointer.cur), default
-}
+} */
 
-h2{
-  color: red;  
-}
+
 
 video {
     width: 100%

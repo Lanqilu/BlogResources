@@ -5,6 +5,11 @@
     --dark_page_color: rgba(18, 18, 18, 0.8)
 }
 
+/*表格滚动条*/
+.table-wrap{
+    overflow-x: auto;
+}
+
 /*为了哔哩哔哩banner修改样式*/
 #page-header.post-bg {
     height: 9rem;
@@ -14,6 +19,17 @@
     margin-top: -5em;
     position: inherit;
 }
+
+#page-header.not-home-page{
+    height: 9rem;
+}
+
+#page-header #page-site-info{
+    margin-top: -5em;
+    position: inherit;
+}
+
+
 
 /*分割线样式*/
 hr{
